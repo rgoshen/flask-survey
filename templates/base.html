@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}Base Template{% endblock %}</title>
+    <link rel="stylesheet" href="/static/css/app.css" />
+    <!-- My Icon -->
+    <link
+      rel="shortcut icon"
+      href="/static/imgs/NovusTerraLogo.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="/">Home</a>
+    </nav>
+    <main id="content">{% block content %}CONTENT HERE{% endblock %}</main>
+    <footer><span>&#169 2020 NovusTerra</span></footer>
+  </body>
+</html>
